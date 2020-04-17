@@ -34,6 +34,8 @@
 
 namespace storagedaemon {
 
+class DeviceControlRecord;
+
 class win32_fifo_device : public Device {
  public:
   win32_fifo_device();
