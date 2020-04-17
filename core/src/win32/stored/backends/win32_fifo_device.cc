@@ -39,7 +39,7 @@
 
 namespace storagedaemon {
 
-void win32_fifo_device::OpenDevice(DeviceControlRecord* dcr, DeviceType omode)
+void win32_fifo_device::OpenDevice(DeviceControlRecord* dcr, DeviceMode omode)
 {
   file_size = 0;
   int timeout = max_open_wait;
