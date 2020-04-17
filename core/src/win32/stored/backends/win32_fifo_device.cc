@@ -39,9 +39,6 @@
 
 namespace storagedaemon {
 
-/**
- * Open a fifo device
- */
 void win32_fifo_device::OpenDevice(DeviceControlRecord* dcr, DeviceType omode)
 {
   file_size = 0;
@@ -340,7 +337,4 @@ boffset_t win32_fifo_device::d_lseek(DeviceControlRecord* dcr,
 
 bool win32_fifo_device::d_truncate(DeviceControlRecord* dcr) { return true; }
 
-win32_fifo_device::~win32_fifo_device() {}
-
-win32_fifo_device::win32_fifo_device() {}
 } /* namespace storagedaemon */
